@@ -6,7 +6,7 @@
   align-items: center;
 
   padding: 1rem 2rem;
-  background: rgba(58, 0, 0, 0.25);
+  background: #120538f2;
   box-shadow: 0 22px 22px -22px rgba(2, 3, 21, 0.749);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -179,6 +179,6 @@
 
 @-moz-document url-prefix() {
   .app__navbar  {
-    background: rgba(46, 1, 1, 0.95);
+    background: #0f042ef2;
   }
 }

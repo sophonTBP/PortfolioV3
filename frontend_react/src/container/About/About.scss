@@ -2,21 +2,23 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
+  height: 90vh;
 }
 
-.app__profiles {}
+
 
 .app__profile-item {
   padding-top: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 80px 1fr 1fr 80px;
   grid-template-rows: auto;
   grid-template-areas:
-    " img content";
+    ". img content.";
 
 
 
   .val-text {
+    margin-top: 2rem;
     grid-area: content;
   }
 
@@ -38,11 +40,11 @@
     flex-direction: column;
     padding: 2rem;
     margin: 2rem;
-
+    height: 80vh;
 
   }
 
-  .app__profiles {}
+ 
 
   .app__profile-item {
 

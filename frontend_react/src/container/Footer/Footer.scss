@@ -1,10 +1,12 @@
 .app__footer {
+  margin: 2rem;
   color: var(--black-color);
   flex: 1;
+  height: 90vh;
   width: 100%;
   flex-direction: column;
   .head-text{
-    margin:0;
+    margin: 2rem;
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -30,9 +32,9 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
-    margin: 1rem 0;
-    padding: 0.65rem;
+margin: 0.5rem 1rem;
+    padding: 0.45rem 2rem;
+    
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--primary-color);
@@ -116,7 +118,7 @@
   }
 
   button {
-    padding: 1rem 2rem;
+    padding: 0.8rem 0.8rem 0.5rem ;
     border-radius: 10px;
     border: none;
     background-color: var(--secondary-color);
@@ -124,7 +126,7 @@
     font-weight: 500;
     color: var(--white-color);
     outline: none;
-    margin: 2rem 0 0 0;
+    margin: 2rem  0;
     font-family: var(--font-base);
 
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);

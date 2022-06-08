@@ -15,13 +15,8 @@ export default {
         type: 'string',
       },
       {
-        name: 'projectLink',
-        title: 'Project Link',
-        type: 'string',
-      },
-      {
-        name: 'codeLink',
-        title: 'Code Link',
+        name: 'texte',
+        title: 'Texte',
         type: 'string',
       },
       {

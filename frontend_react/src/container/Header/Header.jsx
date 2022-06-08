@@ -211,7 +211,7 @@ const Header = () => (
           <p className="cta-text">PARLONS ENSEMBLE DE VOS PROJETS</p>
           
         </div>
-      <button className="cta-button">CONTACTEZ NOUS</button>
+      <div  className="cta-button"><a href="#contact">CONTACTEZ NOUS</a></div>
     </motion.div>
 
     <motion.div

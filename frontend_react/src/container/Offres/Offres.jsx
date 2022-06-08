@@ -26,7 +26,7 @@ const Offres = () => {
             <h3 className="head-text-h3">Coût Site Internet</h3>
             <div className="app__offres-container">
                 <motion.div className="app__offres-list">
-                    {offres.map((offre) => (
+                    {offres.sort((a, b) => a.price > b.price ? 1 : -1).map((offre) => (
                         <motion.div
                             whileInView={{ opacity: [0, 1] }}
                             transition={{ duration: 0.5 }}
