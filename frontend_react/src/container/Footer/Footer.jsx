@@ -37,41 +37,44 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">CONTACTEZ NOUS</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+          <a href="mailto:hello@micael.com" className="p-text-email">hello@paax.agency</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
+          <a href="tel:0663738100" className="p-text-phone">0663738100</a>
         </div>
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+            <label className="contact-label-text">Nom</label>
+            <input className="p-text" type="text" name="username" value={username} onChange={handleChangeInput} />
           </div>
           <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+          <label className="contact-label-text">EMail</label>
+            <input className="p-text" type="email"  name="email" value={email} onChange={handleChangeInput} />
           </div>
           <div>
+          <label className="contact-label-text">Message</label>
             <textarea
               className="p-text"
-              placeholder="Your Message"
+              
               value={message}
               name="message"
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'ENVOYER' : 'Sending...'}</button>
         </div>
       ) : (
         <div>
           <h3 className="head-text">
-            Thank you for getting in touch!
+            Merci de nous avoir contacter!
           </h3>
         </div>
       )}

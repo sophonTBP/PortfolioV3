@@ -8,7 +8,7 @@ import Work from './Work/Work';
 export {
   About,
   Footer,
-  Header,
+  Header,  
   Skills,
   Testimonial,
   Work,

@@ -1,9 +1,9 @@
-#home {
-  position: relative;
+#acceuil {
+  /* position: relative;
   background: url("../../assets/bgIMG.png");
   background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: repeat; */
 
   // disable the default padding styles
   .app__wrapper {
@@ -41,16 +41,45 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
+  align-items: center;
+  height: 400px;
 
   margin: 0 2rem;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 100%;
     margin-right: 0rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+
+.cta-text {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+
+}
+
+.cta-button {
+  background-color: var(--secondary-color);
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2rem;
+  border-color: white;
+  border-width: 2px;
+  font-weight: 900;
+  &:hover {
+    background-color: var(--ternary-color);
+  }
+}
+
 
 .app__header-badge {
   width: 100%;
@@ -62,6 +91,7 @@
   .badge-cmp,
   .tag-cmp {
     padding: 1rem 2rem;
+    /* background: var(--white-color); */
     background: var(--white-color);
     border-radius: 15px;
     flex-direction: row;
@@ -75,11 +105,14 @@
     margin-top: 3rem;
 
     p {
+
       width: 100%;
       text-transform: uppercase;
       text-align: right;
+
     }
   }
+
 
   span {
     font-size: 2.5rem;
@@ -113,6 +146,7 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
     img {
+
       width: 60%;
       height: 60%;
     }
@@ -166,12 +200,9 @@
 }
 
 .app__header-img {
-  flex: 1;
-  height: 100%;
 
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   position: relative;
 
   img {
@@ -190,7 +221,104 @@
     height: 90%;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
+    flex: 0.75;
+    display: flex;
+    flex-direction: column;
     margin: 2rem 0;
+  }
+}
+
+
+
+
+/* ------------------------------PORTAL--------------------------------ANIMATION-------------------------- */
+
+
+
+.background {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation_container {
+  position: relative;
+  animation: fatCircle 1s linear infinite;
+
+  width: 355px;
+  height: 355px;
+  margin: auto;
+  display: block;
+}
+
+.circle:nth-child(1) {
+  animation-duration: 105s;
+}
+
+.circle:nth-child(2) {
+  animation-duration: 95s;
+}
+
+.circle:nth-child(3) {
+  animation-duration: 88s;
+}
+
+.circle:nth-child(4) {
+  animation-duration: 82s;
+}
+
+.circle:nth-child(5) {
+  animation-duration: 75s;
+}
+
+.circle:nth-child(6) {
+  animation-duration: 68s;
+}
+
+.circle:nth-child(7) {
+  animation-duration: 65s;
+}
+
+.circle:nth-child(8) {
+  animation-duration: 58s;
+}
+
+.circle:nth-child(9) {
+  animation-duration: 52s;
+}
+
+.circle:nth-child(10) {
+  animation-duration: 50s;
+}
+
+.circle {
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: circle 1s linear infinite;
+  will-change: transform;
+
+}
+
+.innerCircle1 {
+  display: block;
+  margin: auto;
+}
+
+.moon {
+  z-index: -1;
+  height: 12rem;
+  transform: translateX(35%)translateY(50%);
+
+
+}
+
+@keyframes circle {
+  100% {
+    transform: rotate(1turn);
   }
 }

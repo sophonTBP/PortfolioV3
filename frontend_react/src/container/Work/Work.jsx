@@ -38,9 +38,9 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text">NOTRE DERNIERE REALISATION</h2>
 
-      <div className="app__work-filter">
+    {/*   <div className="app__work-filter">
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
           <div
             key={index}
@@ -50,7 +50,7 @@ const Work = () => {
             {item}
           </div>
         ))}
-      </div>
+      </div> */}
 
       <motion.div
         animate={animateCard}
@@ -110,6 +110,6 @@ const Work = () => {
 
 export default AppWrap(
   MotionWrap(Work, 'app__works'),
-  'work',
+  'realisations',
   'app__primarybg',
 );

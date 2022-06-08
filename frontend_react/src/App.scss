@@ -1,14 +1,19 @@
 .app {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: var(--dark-color);
+  color: var(--white-color);
   font-family: var(--font-base);
 }
 
 .app__whitebg {
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
+
+  background-color: var(--dark-color);
 }
 
 .app__primarybg {
-  background-color: var(--primary-color);
+ /*  background-color: var(--primary-color); */
+ background-color: var(--dark-color);
 }
 
 .app__container {
@@ -29,10 +34,10 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 
   @media screen and (max-width: 450px) {
-    padding: 4rem 1rem 2rem;
+    padding: 2rem 1rem 2rem;
   }
 }
 
@@ -47,7 +52,7 @@
 
   p {
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--white-color);
   }
 }
 
@@ -55,7 +60,7 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
+  color: var(--white-color);
   text-transform: capitalize;
 
   span {
@@ -74,7 +79,7 @@
 .p-text {
   font-size: 0.8rem;
   text-align: left;
-  color: var(--gray-color);
+  color: var(--white-color);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -85,7 +90,7 @@
 .bold-text {
   font-size: 1rem;
   font-weight: 800;
-  color: var(--black-color);
+  color: var(--white-color);
   text-align: left;
 
   @media screen and (min-width: 2000px) {
