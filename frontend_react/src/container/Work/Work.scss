@@ -2,7 +2,7 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  height: 70vh;
+  height: 100vh;
   @media screen and (max-width: 800px) {
     padding-top: 25rem;
   }
@@ -54,11 +54,11 @@
   .app__work-item {
     
     flex-direction: column;
-
+    
     margin: 2rem;
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: rgb(0, 0, 0);
+    background-color: #380505f2;
     color: #000;
 
     cursor: pointer;
@@ -88,8 +88,8 @@
   position: relative;
 
   img {
-    width: 70%;
-    height: 70%;
+   
+    height: 50vh;
     border-radius: 0.5rem;
     object-fit: cover;
     

@@ -21,7 +21,7 @@
   height: 100%;
   flex-direction: row;
 
-  padding: 6rem 2rem 0rem;
+  
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
@@ -59,10 +59,10 @@
 }
 
 
-.cta-text {
-  font-size: 1.8rem;
-  letter-spacing: 0.2rem;
-  text-align: center;
+.cta-text  {
+  
+  letter-spacing: 0.3rem !important;
+  
 
 }
 

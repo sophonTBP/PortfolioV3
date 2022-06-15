@@ -37,10 +37,14 @@ const App = () => (
   <div className="app">
     <ErrorBoundary>
       <Navbar />
+
+
       <Header />
-     <About /> 
+      <About />
       <Work />
       <Offres />
+
+
       {/* <Testimonial /> */}
       <Footer />
     </ErrorBoundary>

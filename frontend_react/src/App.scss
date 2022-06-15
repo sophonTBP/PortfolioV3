@@ -12,8 +12,8 @@
 }
 
 .app__primarybg {
- /*  background-color: var(--primary-color); */
- background-color: var(--dark-color);
+  /*  background-color: var(--primary-color); */
+  background-color: var(--dark-color);
 }
 
 .app__container {
@@ -28,6 +28,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.app__grid {
+  
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "img_content dark_content";
+  
+  border-radius: 10px;
+  padding: 2rem;
+
+
+
+  
+ 
+
 }
 
 .app__wrapper {
@@ -58,7 +76,7 @@
 
 .head-text {
   /* font-size: 2.75rem; */
-  font-size:  clamp(1.5rem, 2vw, 2.75rem);
+  font-size: clamp(1.5rem, 2vw, 2.75rem);
   font-weight: 800;
   text-align: center;
   color: var(--white-color);
@@ -68,21 +86,38 @@
     color: var(--secondary-color);
   }
 
- /*  @media screen and (min-width: 2000px) {
+  /*  @media screen and (min-width: 2000px) {
     font-size: 4rem;
   }
 
   @media screen and (max-width: 450px) {
     font-size: 2rem;
   }*/
-} 
+}
 
+.img-content{
+  display:flex ;
+  align-self: center;
+  justify-self: center;
+  grid-area: img_content;
+
+  @media screen and (max-width: 1200px) {
+    margin-top: 2rem;
+      
+      
+      grid-area: img_content;
+  }
+}
+
+.dark-content{
+  grid-area: dark_content;
+}
 .p-text {
-  font-size: clamp(1.2rem, 1.5vw, 2.75rem);
+  font-size: clamp(1rem, 1.5vw, 2.75rem);
   text-align: left;
   color: var(--white-color);
   line-height: 1.5;
-
+  
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem;
   }
@@ -154,13 +189,13 @@
   }
 }
 
-.app__navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-  padding: 1rem;
+
+.app__navigation {
+
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 
   .app__navigation-dot {
     width: 10px;
@@ -183,6 +218,7 @@
 }
 
 @media screen and (max-width: 500px) {
+
   .app__navigation,
   .app__social {
     display: none;

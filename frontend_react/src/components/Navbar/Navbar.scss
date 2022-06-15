@@ -6,7 +6,7 @@
   align-items: center;
 
   padding: 1rem 2rem;
-  background: #120538f2;
+  background: #380505f2;
   box-shadow: 0 22px 22px -22px rgba(2, 3, 21, 0.749);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -39,6 +39,9 @@
 
   list-style: none;
 
+
+
+
   li {
     margin: 0 1rem;
     cursor: pointer;
@@ -57,9 +60,15 @@
       margin-bottom: 5px;
     }
 
-    
+
+    .active {
+      border-bottom: 1px solid var(--secondary-color);
+      color: var(--secondary-color)
+    }
 
     a {
+
+
       color: var(--white-color);
       text-decoration: none;
       flex-direction: column;
@@ -151,7 +160,10 @@
       li {
         margin: 1rem;
 
+
+
         a {
+
           color: var(--gray-color);
           text-decoration: none;
           font-size: 1rem;
@@ -163,7 +175,11 @@
           &:hover {
             color: var(--secondary-color);
           }
+
+
+
         }
+
       }
     }
 
@@ -178,7 +194,7 @@
 }
 
 @-moz-document url-prefix() {
-  .app__navbar  {
+  .app__navbar {
     background: #0f042ef2;
   }
 }
