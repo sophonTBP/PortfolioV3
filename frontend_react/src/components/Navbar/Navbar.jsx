@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import { Link,  animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import { images } from '../../constants';
 import './Navbar.scss';
@@ -13,8 +13,8 @@ const Navbar = () => {
     <nav className="app__navbar">
 
       <ul className="app__navbar-links">
-        {['acceuil', 'valeurs', 'realisations', 'offres', 'contact'].map((item) => (
-          <li className="app__flex p-text" key={`link-${item}`}>
+        {['acceuil', 'nos valeurs', 'realisations', 'offres', 'contact'].map((item) => (
+          <li className="app__flex h-text" key={`link-${item}`}>
 
             <Link
               to={`${item}`}
@@ -38,7 +38,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {['acceuil', 'valeurs', 'realisations', 'offres', 'contact'].map((item, index) => (
+              {['acceuil', 'nos valeurs', 'realisations', 'offres', 'contact'].map((item, index) => (
                 <li key={item}>
                   <a href={`#${item}`}
                     key={item + index}

@@ -9,6 +9,7 @@
 
 
 .app__profile-item {
+  height: 25vh;
   margin-top:2rem ;
  
   border-radius: 10px;
@@ -27,14 +28,17 @@
   }
 
 
- /*  .img-bg {
-    width:100%;
-   
-    margin: 2rem;
-    border-radius: 15px;
-    object-fit: cover;
+ .img-bg {
+
+    height: 120%;
     
-  }  */
+    margin:0 auto ;
+   
+    padding: 10px;
+    border-radius: 15px;
+    object-fit: contain;
+    
+  }  
 }
 
 @media screen and (max-width: 1200px) {

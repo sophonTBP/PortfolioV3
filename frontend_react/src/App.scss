@@ -26,14 +26,15 @@
 
 .app__flex {
   display: flex;
-  justify-content: center;
+  flex: 1;
+  
   align-items: center;
 }
 
 .app__grid {
   
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 60% 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "img_content dark_content";
@@ -112,15 +113,33 @@
 .dark-content{
   grid-area: dark_content;
 }
-.p-text {
+.h-text {
   font-size: clamp(1rem, 1.5vw, 2.75rem);
+  text-align: left;
+  color: var(--white-color);
+  line-height: 2;
+  
+  @media screen and (min-width: 2000px) {
+   
+  }
+}
+
+.p-text {
+  font-size: clamp(0.5rem, 0.9vw, 2.75rem);
   text-align: left;
   color: var(--white-color);
   line-height: 1.5;
   
-  @media screen and (min-width: 2000px) {
-    font-size: 1.75rem;
-  }
+  
+}
+
+.small-p-text {
+  font-size: clamp(0.4rem, 0.7vw, 1.75rem);
+  text-align: left;
+  color: var(--white-color);
+  line-height: 1.5;
+  
+  
 }
 
 .bold-text {

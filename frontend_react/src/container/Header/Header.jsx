@@ -44,11 +44,11 @@ const Header = () => (
       className="app__header-info"
     >
             
-        <div className="tag-cmp app__flex">
+        <div className="tag-cmp app__grid">
           <p className="p-text cta-text">ENSEMBLE REALISONS VOS PROJETS</p>
-          
+          <div  className="cta-button p-text"><a href="#contact">CONTACTEZ NOUS</a></div>
         </div>
-      <div  className="cta-button"><a href="#contact">CONTACTEZ NOUS</a></div>
+      
     </motion.div>
 
     <motion.div

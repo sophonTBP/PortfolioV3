@@ -36,12 +36,13 @@ const About = () => {
               key={about.title + index}
             >
               <div className='img-bg' style={{
-                backgroundImage: `url(${ urlFor(about.imgUrl).width(300).height(400).url()})`, backgroundRepeat: 'no-repeat',padding: "1rem",
-                width: '100%'
+                backgroundImage: `url(${ urlFor(about.imgUrl).width(500).height(400).url()})`, backgroundRepeat: 'no-repeat',padding: "1rem",
+                
               }} alt={about.title} >
-                {/* <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2> */}
-                <p className="p-text" >{about.description}</p>
+                 
               </div>
+              <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2> 
+                <p className="small-p-text" >{about.description}</p>
             </motion.div>
           )
         })}
@@ -52,6 +53,6 @@ const About = () => {
 
 export default AppWrap(
   MotionWrap(About, 'app__about'),
-  'valeurs',
+  'nos valeurs',
   'app__whitebg',
 );
