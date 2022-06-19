@@ -1,31 +1,62 @@
-export default{
-    name:'abouts',
-    title:'Abouts',
+export default {
+    name: 'abouts',
+    title: 'Abouts',
     type: 'document',
-    fields:[
+    fields: [
         {
-            name:'title',
-            title:'Title',
-            type:'string'
+            name: 'title',
+            title: 'Title',
+            type: 'string'
+        },
+
+        {
+            name: 'headertitle',
+            title: 'Headertitle',
+            type: 'string'
         },
         {
-            name:'index',
-            title:'Index',
-            type:'number'
+            name: 'header',
+            title: 'Header',
+            type: 'string'
         },
         {
-            name:'description',
-            title:'Description',
-            type:'string'
+            name: 'subtitlep1',
+            title: 'SubTitlep1',
+            type: 'string'
+        }
+        ,
+        {
+            name: 'paragraph1',
+            title: 'Paragraph1',
+            type: 'string'
         },
         {
-            name:'imgUrl',
-            title:'ImgUrl',
+            name: 'imgUrl1',
+            title: 'ImgUrl1',
             type: 'image',
             options: {
-              hotspot: true,
+                hotspot: true,
             },
         },
-        
+        {
+            name: 'subtitlep2',
+            title: 'SubTitlep2',
+            type: 'string'
+        },
+        {
+            name: 'paragraph2',
+            title: 'Paragraph2',
+            type: 'string'
+        },
+        {
+            name: 'imgUrl2',
+            title: 'ImgUrl2',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        },
+
+
     ]
 }

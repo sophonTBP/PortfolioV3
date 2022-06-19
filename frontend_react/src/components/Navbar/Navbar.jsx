@@ -18,6 +18,7 @@ const Navbar = () => {
 
             <Link
               to={`${item}`}
+              offset={-90}
               activeClass="active"
               spy={true}>
               {item}
