@@ -4,7 +4,7 @@ import { About, Footer, Header, Work } from './container';
 import { Navbar } from './components';
 import './App.scss';
 import Offres from './container/Offres/Offres';
-
+import COLORS from './constants/Themes';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -34,7 +34,22 @@ class ErrorBoundary extends React.Component {
 }
 
 const App = () => (
-  <div className="app">
+  <div className="app" style={{ "-ms-overflow-style": "none",  /* IE and Edge */
+  scrollbarWidth: "none",  /* Firefox */
+
+  "--font-base": ["Catamaran","DM Sans", "sans-serif"] , 
+  
+  "--primary-color": COLORS.primary,
+  "--secondary-color": COLORS.secondary,
+  "--secondary-light-color": COLORS.secondaryLight,
+  "--ternary-color": COLORS.ternary,
+  "--black-color": COLORS.black,
+  "--dark-color":COLORS.dark,
+  "--lightGray-color":COLORS.lightGray,
+  "--gray-color": COLORS.gray,
+  "--brown-color": COLORS.brown,
+  "--white-color": COLORS.white,
+  }}>
     <ErrorBoundary>
       <Navbar />
       <NavigationDots /> 
