@@ -1,3 +1,3 @@
 import images from './images';
-
-export { images };
+import COLORS from './Themes' 
+export { images, COLORS };

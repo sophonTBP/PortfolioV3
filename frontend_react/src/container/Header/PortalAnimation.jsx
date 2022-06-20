@@ -1,4 +1,5 @@
 import './Header.scss';
+import {COLORS} from '../../constants';
 
 const Logo = (props) => (
     <svg
@@ -175,18 +176,18 @@ const Logo = (props) => (
         >
 
         <defs id="defs1488" />
-        <circle stroke="#fb7a17" opacity=".641" strokeWidth="3" cx="183" cy="183" r="189" fill="none"
+        <circle stroke= {COLORS.secondary} opacity="1" strokeWidth="3" cx="183" cy="183" r="189" fill="none"
             fillRule="evenodd" strokeDasharray="96.2501, 7.40386, 14.8078,20" id="circle1482"
-            style={{stroke: "#fb7a17" , "strokeOpacity":1}} />
+             />
     </svg>
 
     <svg className="circle" width="366" height="366" viewBox="0 0 366 366" version="1.1" id="svg1484"
         >
 
         <defs id="defs1488" />
-        <circle stroke="#fb7a17" opacity=".241" strokeWidth="3" cx="183" cy="183" r="183" fill="none"
+        <circle stroke={COLORS.secondary} opacity=".3" strokeWidth="3" cx="183" cy="183" r="183" fill="none"
             fillRule="evenodd" strokeDasharray="96.2501, 7.40386, 14.8078,20" id="circle1482"
-            style={{stroke:"#fb7a17","strokeOpacity":0.52549022}}/>
+            />
     </svg>
 
     <svg className="circle" width="366" height="366" viewBox="0 0 96.837448 96.837511" version="1.1" id="svg1019"
@@ -195,7 +196,7 @@ const Logo = (props) => (
         <defs id="defs1016" />
         <g id="layer1" transform="translate(-76.147226,-19.954467)">
             <ellipse
-                style={{opacity:0.70449,fill:"none","fillOpacity":1,stroke:"#fb7a17",strokeWidth:2.07087,"strokeMiterlimit":4,strokeDasharray:[29.8336, 10.9068, 13.858],"strokeOpacity":0.52376342}}
+                style={{opacity:0.70449,fill:"none","fillOpacity":1,stroke:COLORS.secondary,strokeWidth:2.07087,"strokeMiterlimit":4,strokeDasharray:[29.8336, 10.9068, 13.858],"strokeOpacity":0.52376342}}
                 id="path2821" cx="102.4044" cy="99.376892" rx="47.492195" ry="47.250072"
                 transform="matrix(0.96310807,-0.26911494,0.26102082,0.96533317,0,0)" />
         </g>
@@ -206,21 +207,21 @@ const Logo = (props) => (
 
         <defs id="defs1016" />
         <path id="path2821"
-            style={{opacity:0.471847,fill:"none",stroke:"#fb7a17",strokeWidth:1.00013,"strokeMiterlimit":4,strokeDasharray:"none","strokeOpacity":1}}
+            style={{opacity:0.471847,fill:"none",stroke:COLORS.secondary,strokeWidth:1.00013,"strokeMiterlimit":4,strokeDasharray:"none","strokeOpacity":1}}
             d="M 95.800991,48.418845 A 47.458729,47.382084 0 0 1 48.342261,95.800927 47.458729,47.382084 0 0 1 0.883535,48.418845 47.458729,47.382084 0 0 1 48.342261,1.036761 47.458729,47.382084 0 0 1 95.800991,48.418845 Z" />
     </svg>
     <svg className="circle" width="366" height="366" viewBox="0 0 366 366" version="1.1" id="svg1484"
        >
 
         <defs id="defs1488" />
-        <circle stroke="#ffce1d" strokeWidth="3" cx="183" cy="183" r="160" fill="none" fillRule="evenodd"
+        <circle stroke={COLORS.ternary}strokeWidth="3" cx="183" cy="183" r="160" fill="none" fillRule="evenodd"
             opacity=".441" strokeDasharray="26.2501, 7.40386, 114.8078" id="circle1482"
-            style={{stroke:"#ffce1d","strokeOpacity":1}} />
+             />
     </svg>
     <svg className="circle" width="366" height="366" viewBox="0 0 366 366" version="1.1" id="svg1484"
         >
         <defs id="defs1488" />
-        <circle stroke="#fb7a17" opacity=".641" strokeWidth="3" cx="183" cy="183" r="160" fill="none"
+        <circle stroke={COLORS.ternary} opacity=".641" strokeWidth="3" cx="183" cy="183" r="160" fill="none"
             fillRule="evenodd" strokeDasharray="96.2501, 7.40386, 14.8078" id="circle1482" />
     </svg>
     <svg className="circle" width="366" height="366" viewBox="0 0 366 366" version="1.1" id="svg1484"
@@ -229,27 +230,27 @@ const Logo = (props) => (
         <defs id="defs1488" />
         <circle stroke="#ffce1d" strokeWidth="10" cx="183" cy="183" r="150" fill="none" fillRule="evenodd"
             opacity=".441" strokeDasharray="3, 2, 204" id="circle1482"
-            style={{stroke:"#ffce1d","strokeOpacity":0.52549022}} />
+            style={{stroke:COLORS.ternary,"strokeOpacity":0.52549022}} />
     </svg>
     <svg className="circle" width="366" height="366" viewBox="0 0 366 366" version="1.1" id="svg1484"
         >
         <defs id="defs1488" />
-        <circle stroke="#ffce1d" strokeWidth="12" cx="183" cy="183" r="150" fill="none" fillRule="evenodd"
+        <circle stroke={COLORS.ternary }strokeWidth="12" cx="183" cy="183" r="150" fill="none" fillRule="evenodd"
             opacity=".641" strokeDasharray="30, 2, 84,30" id="circle1482" />
     </svg>
 
     <svg className="circle" width="366" height="366" viewBox="0 0 366 366" version="1.1" id="svg1484"
         >
         <defs id="defs1488" />
-        <circle stroke="#ffce1d" strokeWidth="3" cx="183" cy="183" r="138" fill="none" fillRule="evenodd"
+        <circle stroke={COLORS.ternary} strokeWidth="3" cx="183" cy="183" r="138" fill="none" fillRule="evenodd"
             opacity=".441" strokeDasharray="36, 8, 1158" id="circle1482"
-            style={{stroke:"#ffce1d","strokeOpacity":1}} />
+             />
     </svg>
 
     <svg className="circle" width="366" height="366" viewBox="0 0 366 366" version="1.1" id="svg1484"
         >
         <defs id="defs1488" />
-        <circle stroke="#fb7a17" opacity=".641" strokeWidth="4" cx="183" cy="183" r="138" fill="none"
+        <circle stroke={COLORS.ternary} opacity=".641" strokeWidth="4" cx="183" cy="183" r="138" fill="none"
             fillRule="evenodd" strokeDasharray="90, 7, 15" id="circle1482" />
     </svg>
     <Logo className="moon"/>

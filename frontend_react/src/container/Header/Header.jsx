@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Portal from './PortalAnimation.jsx';
 import { AppWrap } from '../../wrapper';
-import { images } from '../../constants';
+import { images , COLORS} from '../../constants';
 import './Header.scss';
 
 const scaleVariants = {
