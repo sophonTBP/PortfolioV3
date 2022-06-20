@@ -3,6 +3,7 @@
   background-color: var(--dark-color);
   color: var(--white-color);
   font-family: var(--font-base);
+
 }
 
 .app__whitebg {
@@ -26,35 +27,37 @@
 
 .app__flex {
   display: flex;
-  flex: 1;
   
   align-items: center;
+  
+  justify-content: center;
+  
 }
 
 .app__grid {
-  
+
   display: grid;
   grid-template-columns: 60% 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "img_content dark_content";
-  
+
   border-radius: 10px;
   padding: 2rem;
 
 
 
-  
- 
+
+
 
 }
 
 .app__wrapper {
   flex: 1;
-  width: 80%;
+  width: 100%;
   flex-direction: column;
   padding: 2rem 2rem;
-
+  
   @media screen and (max-width: 450px) {
     padding: 2rem 1rem 2rem;
   }
@@ -83,6 +86,7 @@
   color: var(--white-color);
   text-transform: capitalize;
   margin-bottom: 3rem;
+
   span {
     color: var(--secondary-color);
   }
@@ -96,60 +100,61 @@
   }*/
 }
 
-.img-content{
-  display:flex ;
+.img-content {
+  display: flex;
   align-self: center;
   justify-self: center;
   grid-area: img_content;
 
   @media screen and (max-width: 1200px) {
     margin-top: 2rem;
-      
-      
-      grid-area: img_content;
+
+
+    grid-area: img_content;
   }
 }
 
-.dark-content{
+.dark-content {
   grid-area: dark_content;
 }
+
 .h-text {
   font-size: clamp(1rem, 1.2vw, 2.75rem);
   text-align: left;
   color: var(--white-color);
-  
-  
-  @media screen and (min-width: 2000px) {
-   
-  }
+
+
+  @media screen and (min-width: 2000px) {}
 
 
 }
+
 .h1-text {
   font-size: clamp(1.1rem, 4.9vw, 2.5rem);
   text-align: left;
   color: var(--white-color);
-  
-  
-  
-   
-  }
+
+
+
+
+}
+
 .p-text {
-  font-size: clamp(0.5rem, 0.9vw, 2.75rem);
+  font-size: clamp(0.7rem, 0.8vw, 2.75rem);
   text-align: left;
   color: var(--white-color);
   line-height: 1.5;
-  
-  
+
+
 }
 
 .small-p-text {
-  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
   text-align: left;
   color: var(--white-color);
   line-height: 1.5;
-  
-  
+
+
 }
 
 .bold-text {
@@ -224,7 +229,11 @@
 
   display: flex;
   flex-direction: column;
+  padding-top: 45vh;
   align-self: center;
+  position: fixed;
+
+
 
   .app__navigation-dot {
     width: 10px;
@@ -233,10 +242,15 @@
     background-color: #cbcbcb;
     margin: 0.5rem;
 
+
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
       background-color: var(--secondary-color);
+    }
+
+    &.active {
+      background-color: var(--secondary-color)
     }
 
     @media screen and (min-width: 2000px) {

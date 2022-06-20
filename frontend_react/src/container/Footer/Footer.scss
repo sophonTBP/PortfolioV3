@@ -2,7 +2,7 @@
   margin-top: 5rem;
   color: var(--black-color);
   flex: 1;
-  height: 80vh;
+  
   width: 100%;
   flex-direction: column;
   .head-text{
@@ -15,47 +15,59 @@
 
 .contact-label-text {
   padding-left: 0.7rem;
+  text-align: right !important ;
 }
 
 .app__footer-cards {
   
   width: 60%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  
+  flex-wrap: nowrap;
+  @media screen and (max-width: 745px) {
+    flex-direction: column;
+    
+  }
 
   .app__footer-card {
-    min-width: 290px;
+    min-width: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    
     align-items: center;
-margin: 0.5rem 1rem;
-    padding: 0.45rem 2rem;
+    justify-content: center;
+    margin: 0.5rem 0rem;
+   
     
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--primary-color);
 
     transition: all 0.3s ease-in-out;
-
+    @media screen and (max-width: 745px) {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
     img {
       filter: grayscale(80%);
       width: 40px;
       height: 40px;
-      margin: 0 0.7rem;
+      margin: 0 0.1rem;
     }
 
     p {
       font-weight: 500;
+      
     }
 
     a {
       color: var(--black-color);
       text-decoration: none;
       font-weight: 500;
+      min-width: 100px;
+     
     }
 
     &:hover {
@@ -67,8 +79,8 @@ margin: 0.5rem 1rem;
     }
   }
 
-  @media screen and (max-width: 768px) {
-    width: 100%;
+  @media screen and (max-width: 900px) {
+    width: 80%;
   }
 }
 
@@ -137,8 +149,8 @@ margin: 0.5rem 1rem;
     }
   }
 
-  @media screen and (max-width: 768px) {
-    width: 100%;
+  @media screen and (max-width: 900px) {
+    width: 80%;
     margin: 1rem 0;
   }
 }

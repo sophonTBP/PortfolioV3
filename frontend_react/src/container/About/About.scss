@@ -9,7 +9,7 @@
 .app__profiles {
   width: 100%;
   margin: 0 auto;
-
+  margin-top: 2rem;
   /* .head-text {
     margin-left: 5rem;
      text-align: left; 
@@ -17,20 +17,20 @@
 }
 
 .app__profiles-item {
-  height: calc(4rem + 13rem + 4rem + 19rem + 6rem + 7rem + 4rem + 5rem + 25rem);
+  min-height: calc(8vw + 26vw + 6vw + 15vw + 6vw + 1vw + 4vw + 10vw + 30vw);
   display: grid;
 
   grid-template-areas:
     ". title1 image1 ."
     ". header1 image1 ."
-    ". subTitleP1 image1 ."
-    ". paragraph1 image1 ."
+    ". subTitleP1 . ."
+    ". paragraph1 paragraph1 ."
     ". . . ."
     ". image2 . ."
     ". image2 subTitleP2 ."
     ". image2 paragraph2  .";
-  grid-template-columns: 80px 0.5fr 0.5fr 90px;
-  grid-template-rows: 4rem 13rem 4rem 19rem 6rem 7rem 4rem 5rem;
+  grid-template-columns: 80px 0.5fr 0.5fr 110px;
+  grid-template-rows: 8vw 26vw 6vw 15vw 6vw 1vw 4vw 10vw;
 
 
   .about-text {
@@ -54,7 +54,7 @@
       " subTitleP2 "
       " paragraph2  ";
     grid-template-columns: 1fr;
-    grid-template-rows: 12vh 20vh 62vw 6vh 12vh 10vh 62vw 7vh 12vh 3rem;
+    grid-template-rows: 12vh 20vh 58vw 6vh 12vh 15vh 58vw 7vh 12vh 3rem;
 
 
 
@@ -73,13 +73,13 @@
   text-align: center;
   height:10vh ;}
 img {
+  width:clamp(100px, 42vw, 850px);
   
-  max-width: 850px;
   margin: 0 auto;
   padding: 10px;
   border-radius: 15px;
   object-fit: contain;
-  @media screen and (max-width: 1200px) {height: 60vw;}
+  @media screen and (max-width: 1200px) {width:clamp(100px, 75vw, 850px);}
 }
 
 .image1 {

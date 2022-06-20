@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavigationDots, SocialMedia } from './components';
 import { About, Footer, Header, Work } from './container';
 import { Navbar } from './components';
 import './App.scss';
@@ -37,6 +37,7 @@ const App = () => (
   <div className="app">
     <ErrorBoundary>
       <Navbar />
+      <NavigationDots /> 
 
 
       <Header />

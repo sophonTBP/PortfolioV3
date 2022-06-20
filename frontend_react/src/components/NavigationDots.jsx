@@ -1,19 +1,21 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable jsx-a11y/anchor-has-content */
-
+import { Link, animateScroll as scroll } from "react-scroll";
 import React from 'react';
 
 const NavigationDots = ({ active }) => (
  
   <div className="app__navigation">
     
-    {['acceuil', 'valeurs', 'realisations', 'offres' , 'contact'].map((item, index) => (
-      <a
-        href={`#${item}`}
-        key={item + index}
+    {['acceuil', 'nos valeurs', 'realisations', 'offres' , 'contact'].map((item, index) => (
+      <Link
+      key={item}
+      to={`${item}`}
+      offset={-90}
         className="app__navigation-dot"
-        style={active === item ? { backgroundColor: '#fb7a17' } : {}}
-      />
+        activeClass="active"
+              spy={true}
+      ></Link>
     ))}
   </div>
  

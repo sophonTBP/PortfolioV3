@@ -2,8 +2,8 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    height: 90vh;
-    margin-top: 9rem;
+    
+    margin-top: 5rem;
 
 
     @media screen and (max-width: 900px) {
@@ -15,14 +15,14 @@
     }
 
     .head-text-h3 {
-        margin-top: 2rem;
+        margin-top: 0.5rem;
         
     }
 }
 
 
 .app__offres-container {
-    width: 80%;
+    width: 90%;
     margin-top: 2rem;
 
     display: flex;
@@ -60,14 +60,14 @@
         grid-area: content;
 
     }
-
-}
-
 .p-text {
-
+    text-decoration: underline;
     letter-spacing: 0.05rem;
-
+    text-underline-offset: 4px;
 }
+}
+
+
 
 
 .p-price {
@@ -80,8 +80,8 @@
     flex-direction: column;
     text-align: center;
     background-color: #380505f2;
-    margin: 0.8rem;
-    padding: 1.2rem;
+    margin: 1.8rem;
+    padding: 3.2rem;
 
     transition: all 0.3s ease-in-out;
 
@@ -111,6 +111,7 @@
     p {
         font-weight: 500;
         margin-top: 0.2rem;
+        letter-spacing: 2px;
     }
 
     @media screen and (min-width: 2000px) {
