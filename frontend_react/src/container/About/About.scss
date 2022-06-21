@@ -34,7 +34,9 @@
 
 
   .about-text {
+    
     letter-spacing: 2px;
+    color:var(--color-primary);
     white-space: pre-line !important;
   }
 
@@ -91,6 +93,7 @@ img {
 }
 
 .title1 {
+  font-size:clamp(1.5rem, 2vw, 2.2rem);
   grid-area: title1;
 }
 

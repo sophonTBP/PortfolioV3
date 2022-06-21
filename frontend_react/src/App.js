@@ -1,12 +1,16 @@
 import React from 'react';
+import GlobalStyles from './components/GlobalStyles';
 import { NavigationDots, SocialMedia } from './components';
 import { About, Footer, Header, Work } from './container';
 import { Navbar } from './components';
 import './App.scss';
 import Offres from './container/Offres/Offres';
-import COLORS from './constants/Themes';
-
-class ErrorBoundary extends React.Component {
+import {
+  default as COLORS, COLOR_MODE_KEY,
+  INITIAL_COLOR_MODE_CSS_PROP
+} from './constants/Themes';
+import { ThemeProvider } from './wrapper/ThemeContext';
+/* class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
     this.state = { hasError: false };
@@ -31,40 +35,61 @@ class ErrorBoundary extends React.Component {
 
     return this.props.children;
   }
+} */
+const setColorsByTheme = () => {
+  const colors = COLORS;
+  const colorModeKey = COLOR_MODE_KEY;
+  const colorModeCssProp = INITIAL_COLOR_MODE_CSS_PROP;
+
+  const mql = window.matchMedia('(prefers-color-scheme: dark)');
+  const prefersDarkFromMQ = mql.matches;
+  const persistedPreference = localStorage.getItem(colorModeKey);
+
+  let colorMode = 'light';
+
+  const hasUsedToggle = typeof persistedPreference === 'string';
+
+  if (hasUsedToggle) {
+    colorMode = persistedPreference;
+  } else {
+    colorMode = prefersDarkFromMQ ? 'dark' : 'light';
+  }
+
+  let root = document.documentElement;
+
+  root.style.setProperty(colorModeCssProp, colorMode);
+
+  Object.entries(colors).forEach(([name, colorByTheme]) => {
+    const cssVarName = `--color-${name}`;
+
+    root.style.setProperty(cssVarName, colorByTheme[colorMode]);
+  });
 }
 
-const App = () => (
-  <div className="app" style={{ "-ms-overflow-style": "none",  /* IE and Edge */
-  scrollbarWidth: "none",  /* Firefox */
 
-  "--font-base": ["Catamaran","DM Sans", "sans-serif"] , 
+setColorsByTheme()
+const App = () =>
+
   
-  "--primary-color": COLORS.primary,
-  "--secondary-color": COLORS.secondary,
-  "--secondary-light-color": COLORS.secondaryLight,
-  "--ternary-color": COLORS.ternary,
-  "--black-color": COLORS.black,
-  "--dark-color":COLORS.dark,
-  "--lightGray-color":COLORS.lightGray,
-  "--gray-color": COLORS.gray,
-  "--brown-color": COLORS.brown,
-  "--white-color": COLORS.white,
-  }}>
-    <ErrorBoundary>
-      <Navbar />
-      <NavigationDots /> 
 
 
-      <Header />
-      <About />
-      <Work />
-      <Offres />
+    (
+
+      <div className="app" >
+<ThemeProvider>
+      <GlobalStyles />
+        <Navbar />
+        <NavigationDots />
+        <Header />
+        <About />
+        <Work />
+        <Offres />
 
 
-      {/* <Testimonial /> */}
-      <Footer />
-    </ErrorBoundary>
-  </div>
-);
+
+        <Footer />
+  </ThemeProvider>
+      </div>
+    );
 
 export default App;

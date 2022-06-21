@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import DarkToggle from './DarkModeTogle';
 import { images } from '../../constants';
 import './Navbar.scss';
 
@@ -27,6 +27,7 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
+        <li><DarkToggle/></li>
       </ul>
 
       <div className="app__navbar-menu">

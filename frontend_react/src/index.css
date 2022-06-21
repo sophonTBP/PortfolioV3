@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
+:root {
+  --font-base: "Catamaran","DM Sans", sans-serif ; 
+  --initial-color-mode: light;
+  --color-primary: #1a0000;
+  --color-secondary: #ce4a03;
+  --color-secondaryLight: #ffe48c;
+  --color-ternary: #f88b1d;
+  --color-black: hsl(0, 0%, 0%);
+  --color-bg: #feecba;
+  --color-lightGray: #fcf1d2;
+  --color-gray: #886b6b;
+  --color-brown: #46364a;
+  --color-white: #feecba;
 
+}
 
 :root::-webkit-scrollbar {
   display: none;
-  --primary-color:hsl(0, 0%, 0%) ;
+  --color-primary:hsl(0, 0%, 0%) ;
 }
 
  
@@ -15,4 +29,5 @@
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
+  --test-color:hsl(0, 0%, 100%);
 }

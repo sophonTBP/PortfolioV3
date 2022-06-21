@@ -1,0 +1,31 @@
+.test {
+
+    --primary: #feecba;
+    --secondary: #ce4a03;
+    --secondaryLight: #ffe48c;
+    --ternary: #f88b1d;
+    --black: hsl(0, 0%, 0%);
+    --bg: #1a0000;
+    --lightGray: #fcf1d2;
+    --gray: #886b6b;
+    --brown: #372014;
+    --white: #feecba;
+}
+
+/* style={{ "MsOverflowStyle": "none",  /* IE and Edge */
+    scrollbarWidth: "none",  /* Firefox */
+  
+    "--font-base": ["Catamaran","DM Sans", "sans-serif"] , 
+    
+    "--primary-color": COLORS.primary[theme.colorMode],
+    "--secondary-color": COLORS.secondary[theme.colorMode],
+    "--secondary-light-color": COLORS.secondaryLight[theme.colorMode],
+    "--ternary-color": COLORS.ternary[theme.colorMode],
+    "--black-color": COLORS.black[theme.colorMode],
+    "--bg-color":COLORS.bg[theme.colorMode],
+    "--lightGray-color":COLORS.lightGray[theme.colorMode],
+    "--gray-color": COLORS.gray[theme.colorMode],
+    "--brown-color": COLORS.brown[theme.colorMode],
+    "--white-color": COLORS.white[theme.colorMode],
+    
+*/

@@ -67,7 +67,7 @@
   letter-spacing: 0.2rem !important;
   margin-top: 7rem;
   text-align: end !important;
-
+  color:var(--color-primary)!important;
 }
 
 .cta-button {
@@ -76,7 +76,7 @@
   align-content: center;
   justify-self: center;
   margin-top: 7rem;
-  background-color: var(--secondary-color);
+  background-color: var(--color-secondary);
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
@@ -90,16 +90,16 @@
   a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--dark-color);
+    color: var(--color-bg);
 
     &:hover {
-      background-color: var(--ternary-color);
-      color: var(--primary-color);
+      background-color: var(--color-ternary);
+      color: var(--color-primary);
     }
   }
 
   &:hover {
-    background-color: var(--ternary-color);
+    background-color: var(--color-ternary);
   }
 }
 
@@ -115,7 +115,7 @@
   .tag-cmp {
     padding: 1rem 2rem;
     /* background: var(--white-color); */
-    background: var(--white-color);
+    background: var(--color-white);
     border-radius: 15px;
     flex-direction: row;
     width: auto;
@@ -231,7 +231,7 @@
   animation: fatCircle 1s linear infinite;
 
   @media screen and (min-width: 1200px) {
-    transform: scale(1.7);
+    transform: scale(1.5);
   }
 }
 

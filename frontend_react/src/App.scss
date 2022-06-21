@@ -1,7 +1,7 @@
 .app {
   /* background-color: var(--primary-color); */
-  background-color: var(--dark-color);
-  color: var(--white-color);
+  background-color: var(--color-bg);
+  color: var(--color-white);
   font-family: var(--font-base);
 
 }
@@ -9,12 +9,12 @@
 .app__whitebg {
   /* background-color: var(--white-color); */
 
-  background-color: var(--dark-color);
+  background-color: var(--color-bg);
 }
 
 .app__primarybg {
   /*  background-color: var(--primary-color); */
-  background-color: var(--dark-color);
+  background-color: var(--color-bg);
 }
 
 .app__container {
@@ -74,7 +74,7 @@
 
   p {
     text-transform: uppercase;
-    color: var(--white-color);
+    color: var(--color-primary);
   }
 }
 
@@ -83,12 +83,12 @@
   font-size: clamp(1.5rem, 2vw, 2.75rem);
   font-weight: 800;
   text-align: center;
-  color: var(--white-color);
+  color: var(--color-primary);
   text-transform: capitalize;
   margin-bottom: 3rem;
 
   span {
-    color: var(--secondary-color);
+    color: var(--color-secondary);
   }
 
   /*  @media screen and (min-width: 2000px) {
@@ -121,7 +121,7 @@
 .h-text {
   font-size: clamp(1rem, 1.2vw, 2.75rem);
   text-align: left;
-  color: var(--white-color);
+  color: var(--color-white);
 
 
   @media screen and (min-width: 2000px) {}
@@ -132,7 +132,7 @@
 .h1-text {
   font-size: clamp(1.1rem, 4.9vw, 2.5rem);
   text-align: left;
-  color: var(--white-color);
+  color: var(--color-white);
 
 
 
@@ -142,16 +142,17 @@
 .p-text {
   font-size: clamp(0.7rem, 0.8vw, 2.75rem);
   text-align: left;
-  color: var(--white-color);
+  color: var(--color-white);
   line-height: 1.5;
 
 
 }
 
 .small-p-text {
-  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+  font-family: Cantarell;
+  font-size: clamp(0.8rem, 1.5vw, 1.4rem);
   text-align: left;
-  color: var(--white-color);
+  color: var(--color-white);
   line-height: 1.5;
 
 
@@ -160,7 +161,7 @@
 .bold-text {
   font-size: 1rem;
   font-weight: 800;
-  color: var(--white-color);
+  color: var(--color-white);
   text-align: left;
 
   @media screen and (min-width: 2000px) {
@@ -184,9 +185,9 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: var(--color-white);
     margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
+    border: 1px solid var(--color-lightGray);
 
     display: flex;
     justify-content: center;
@@ -197,15 +198,15 @@
     svg {
       width: 15px;
       height: 15px;
-      color: var(--gray-color);
+      color: var(--color-gray);
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      background-color: var(--color-secondary);
+      border-color: var(--color-secondary);
 
       svg {
-        color: var(--white-color);
+        color: var(--color-white);
       }
     }
 
@@ -246,11 +247,11 @@
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--color-secondary);
     }
 
     &.active {
-      background-color: var(--secondary-color)
+      background-color: var(--color-secondary)
     }
 
     @media screen and (min-width: 2000px) {
