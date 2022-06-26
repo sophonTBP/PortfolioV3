@@ -17,9 +17,9 @@
 
 .app__header {
   
-  flex: 1;
+  
   width: 100%;
-  margin-top: 12rem;
+  @media screen and (min-width: 1200px) { margin-top: 15rem;}
   flex-direction: row;
  
 
@@ -27,15 +27,15 @@
  
 
   @media screen and (max-width: 1200px) {
-    margin-top: 0rem;
-    height: 80vh;
+    margin-top: 5rem;
+    height: 120vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
 
   @media screen and (max-width: 450px) {
-    padding: 6rem 1rem 2rem;
+    margin-top: 0rem;
     height: 120vh;
   }
 }
@@ -46,8 +46,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 400px;
-
+  margin-bottom: 5rem;
+  
   
 
   @media screen and (min-width: 1200px) {
@@ -58,6 +58,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 400px;
   }
 }
 
@@ -216,10 +217,24 @@
 
 
 .background {
-
+  margin-top: 10rem;
+  @media screen and (max-width: 1200px) {margin-bottom: 15rem;}
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  .moon{
+    position: absolute;
+    left: 0rem;
+    top: 0;
+    @media screen and (max-width: 1200px) {
+  
+      position: absolute;
+      left: 0.5rem;
+      top: 4rem;
+  }
+  
+  }
+
 }
 
 .animation_container {
@@ -300,19 +315,16 @@
   margin: auto;
 }
 
-.moon {
-  z-index: -1;
-  height: 12rem;
-  transform: translateX(45%)translateY(80%);
-  @media screen and (min-width: 1200px) {
-    transform: translateX(42%)translateY(50%);
-  }
 
 
-}
+
+
 
 @keyframes circle {
   100% {
     transform: rotate(1turn);
   }
 }
+
+
+  

@@ -2,7 +2,8 @@ import React from 'react';
 import GlobalStyles from './components/GlobalStyles';
 import { NavigationDots, SocialMedia } from './components';
 import { About, Footer, Header, Work } from './container';
-import { Navbar } from './components';
+import { Navbar} from './components';
+import DarkTogglePanel from './components/DarkmodeTogglerPanel';
 import './App.scss';
 import Offres from './container/Offres/Offres';
 import {
@@ -80,6 +81,7 @@ const App = () =>
       <GlobalStyles />
         <Navbar />
         <NavigationDots />
+        <DarkTogglePanel/>
         <Header />
         <About />
         <Work />

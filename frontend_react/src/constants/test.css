@@ -1,11 +1,11 @@
 .test {
 
     --primary: #feecba;
-    --secondary: #ce4a03;
+    --secondary: hsl(21, 100%, 18%);
     --secondaryLight: #ffe48c;
-    --ternary: #f88b1d;
+    --ternary: hsl(27, 100%, 31%);
     --black: hsl(0, 0%, 0%);
-    --bg: #1a0000;
+    --bg: hsl(0, 80%, 2%);
     --lightGray: #fcf1d2;
     --gray: #886b6b;
     --brown: #372014;

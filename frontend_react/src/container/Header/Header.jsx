@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Portal from './PortalAnimation.jsx';
+import {Portal} from './PortalAnimation.jsx';
 import { AppWrap } from '../../wrapper';
 import { images , COLORS} from '../../constants';
 import './Header.scss';
