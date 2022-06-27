@@ -136,7 +136,7 @@
     background-color: var(--color-secondary);
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-bg);
     outline: none;
     margin: 2rem  0;
     font-family: var(--font-base);
@@ -146,7 +146,8 @@
 
     &:hover {
       background-color: var(--color-ternary);
-    }
+      color: var(--color-secondary)!important;}
+    
   }
 
   @media screen and (max-width: 900px) {

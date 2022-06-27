@@ -37,7 +37,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">CONTACTEZ NOUS</h2>
+      <h2 className="h1-text">CONTACTEZ NOUS</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -69,7 +69,7 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'ENVOYER' : 'Sending...'}</button>
+          <button type="button" className="button-text" onClick={handleSubmit}>{!loading ? 'ENVOYER' : 'Sending...'}</button>
         </div>
       ) : (
         <div>

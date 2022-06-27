@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { COLORS } from '../../constants';
 const DarkToggle = () => {
   const { colorMode, setColorMode } = React.useContext(ThemeContext);
-  const [dark, setDark] = useState(false);
+ 
   const themeColor = colorMode;
   const button = {
 
@@ -30,9 +30,7 @@ const DarkToggle = () => {
 
 
 
-  /* if (!colorMode) {
-    return null;
-  } */
+   
 
   return (
     <div className="dark-mode-toggler">
@@ -48,15 +46,15 @@ const DarkToggle = () => {
       <div className="moon-sun-container">
         <motion.svg
           onClick={() => {
-            setDark(!dark)
-            setColorMode(dark? 'dark' : 'light')}
+            
+            setColorMode(colorMode!=="dark"? 'dark' : 'light')}
           }
           className="crown"
           variants={crown}
           whileHover="hover"
           whileTap="pressed"
-          animate={!dark ? "pressed" : "rest"}
-          initial={dark ? "pressed" : "rest"}
+          animate={colorMode==="dark" ? "pressed": "rest" }
+          initial={colorMode==="dark" ? "pressed" : "rest"}
           viewBox="0 0 244.481 244.481"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -89,25 +87,25 @@ const DarkToggle = () => {
 
         <motion.button
           className="toggle"
-          animate={!dark ? "pressed" : "rest"}
+          animate={colorMode!=="dark" ?"rest"  :"pressed" }
           onClick={() => {
-            setDark(!dark)
-            setColorMode(dark? 'dark' : 'light')}
+            
+            setColorMode(colorMode!=="dark"? 'dark' : 'light')}
           }
           variants={button}
-          initial="rest"
+          initial={colorMode!=="dark"? "rest" : "pressed"}
 
         ></motion.button>
 
         <motion.div
           className="moon"
           variants={moonMove}
-          animate={!dark ? "pressed" : "rest"}
-          initial={dark ? "pressed" : "rest"}
+          animate={colorMode==="dark" ? "pressed" : "rest"}
+          initial={colorMode==="dark"? "pressed" : "rest"}
           transition={{ ease: "easeInOut", duration: 0.5 }}
           onClick={() => {
-            setDark(!dark)
-            setColorMode(dark? 'dark' : 'light')}
+            
+            setColorMode(colorMode!=="dark"? 'dark' : 'light')}
           }
         />
 

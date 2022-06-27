@@ -22,7 +22,7 @@ const Offres = () => {
 
     return (
         <>
-            <h1 className="head-text-h1">LA QUALITÉ À UN PRIX</h1>
+            <h1 className="h1-text">LA QUALITÉ À UN PRIX</h1>
             <h3 className="head-text-h3">Coût Site Internet</h3>
             <div className="app__offres-container">
                 <motion.div className="app__offres-list">
@@ -39,7 +39,7 @@ const Offres = () => {
                             >
                            </div>   */}
                             
-                            <p className="p-text">{offre.name}</p>
+                            <p className="p-price">{offre.name}</p>
                             <p className="p-price">€ {offre.price} unité</p>
                             <p className="p-details">{offre.details_ligne1}</p>
                             <p className="p-details">{offre.details_ligne2}</p>

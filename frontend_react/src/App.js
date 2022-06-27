@@ -55,7 +55,7 @@ const setColorsByTheme = () => {
   } else {
     colorMode = prefersDarkFromMQ ? 'dark' : 'light';
   }
-
+  localStorage.setItem("color-mode",colorMode)
   let root = document.documentElement;
 
   root.style.setProperty(colorModeCssProp, colorMode);
