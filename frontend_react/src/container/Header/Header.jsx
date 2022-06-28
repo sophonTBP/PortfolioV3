@@ -44,7 +44,7 @@ const Header = () => (
       className="app__header-info"
     >
             
-        <div className="tag-cmp app__grid">
+        <div className="tag-cmp ">
           <p className="p-text cta-text">ENSEMBLE REALISONS VOS PROJETS</p>
           <div  className="cta-button p-text"><a href="#contact">CONTACTEZ NOUS</a></div>
         </div>

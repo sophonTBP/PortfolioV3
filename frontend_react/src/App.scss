@@ -38,7 +38,7 @@
     "img_content dark_content";
 
   border-radius: 10px;
-  padding: 2rem;
+  
 
 }
 
@@ -50,14 +50,23 @@
 .dark-panel {
   display: flex;
   flex-direction: row;
-  z-index: 0;
+  z-index: 1;
   position: fixed;
   padding: 1rem;
-  justify-content: flex-end;
-
   top: 12%;
-  right: 5%;
+  right: 3rem;
   transform: scale(0.5);
+
+  @media screen and (max-width: 900px) {
+    position:fixed;
+    top: 1rem;
+    z-index: 2;
+    right: 50%;
+
+
+  }
+
+
 }
 
 .dark-panel-text {
@@ -70,9 +79,13 @@
 }
 
 .moon-sun-container {
+
+
+
   border-radius: 25%;
   position: fixed;
   border-style: outset;
+  border-width: 2px;
   border-left-color: var(--color-primary);
   border-top-color: var(--color-primary);
   border-right-color: var(--color-ternary);
@@ -80,10 +93,12 @@
   transform: scale(1.5);
 
   overflow: hidden;
-  padding: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+
 }
 
 .moon-sun-container button {
@@ -93,13 +108,13 @@
   width: 15px;
   height: 15px;
   border-style: hidden;
-  background: "#feecba";
+  background: var(--color-primary);
 
 }
 
 /* hsl(0, 100%, 5%) */
 .moon-sun-container .moon {
-  background: hsl(0, 100%, 5%);
+  background: var(--color-bg);
   border-radius: 100%;
   width: 15px;
   height: 15px;
@@ -109,11 +124,13 @@
 
 .moon-sun-container .crown {
 
-  background: var(--secondary-color);
+  background: var(--color-bg);
   border-radius: 100%;
+  
+ 
   width: 30px;
   height: 30px;
-  padding-bottom: 8px;
+ margin-bottom: 7px;
 
 }
 
@@ -132,9 +149,7 @@
   flex-direction: column;
   padding: 2rem 2rem;
 
-  @media screen and (max-width: 450px) {
-    padding: 2rem 1rem 2rem;
-  }
+
 }
 
 .copyright {
@@ -213,7 +228,7 @@
 }
 
 .p-text {
-  font-size: clamp(0.7rem, 0.9vw, 2.75rem);
+  font-size: clamp(0.7rem, 1.2vw, 2.85rem);
   text-align: left;
   color: var(--color-primary);
   line-height: 1.5;
@@ -330,17 +345,5 @@
       width: 20px;
       height: 20px;
     }
-  }
-}
-
-@media screen and (max-width: 500px) {
-
-  .app__navigation,
-  .app__social {
-    display: none;
-  }
-
-  .copyright {
-    padding: 2rem;
   }
 }
