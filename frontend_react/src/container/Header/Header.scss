@@ -21,21 +21,18 @@
   width: 100%;
   @media screen and (min-width: 1200px) { margin-top: 15rem;}
   flex-direction: row;
- 
-
-
- 
+  
 
   @media screen and (max-width: 1200px) {
-    margin-top: 2rem;
-    height: 120vh;
+    
+    
     flex-direction: column;
     
   }
 
   @media screen and (max-width: 450px) {
     margin-top: 6rem;
-    height: 90vh;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -257,6 +254,7 @@
   height: 290px;
   margin: 0 auto;
   display: block;
+  
   animation: fatCircle 1s linear infinite;
 
   @media screen and (min-width: 1200px) {
@@ -270,6 +268,7 @@
 
 .circle:nth-child(1) {
   animation-duration: 105s;
+  filter: drop-shadow(0px 0px 4px var(--color-primary));
 }
 
 .circle:nth-child(2) {
@@ -278,26 +277,32 @@
 
 .circle:nth-child(3) {
   animation-duration: 88s;
+  filter: drop-shadow(0px 0px 4px var(--color-primary));
 }
 
 .circle:nth-child(4) {
   animation-duration: 82s;
+  
 }
 
 .circle:nth-child(5) {
   animation-duration: 75s;
+  
 }
 
 .circle:nth-child(6) {
   animation-duration: 68s;
+  filter: drop-shadow(0px 0px 4px var(--color-ternary));
 }
 
 .circle:nth-child(7) {
   animation-duration: 65s;
+  
 }
 
 .circle:nth-child(8) {
   animation-duration: 58s;
+  
 }
 
 .circle:nth-child(9) {
@@ -306,6 +311,7 @@
 
 .circle:nth-child(10) {
   animation-duration: 50s;
+  filter: drop-shadow(0px 0px 4px var(--color-ternary));
 }
 
 .circle {
