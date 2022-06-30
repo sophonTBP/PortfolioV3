@@ -1,14 +1,17 @@
 .app__offres {
     flex: 1;
-    width: 100%;
+    
     flex-direction: column;
     
     margin-top: 5rem;
 
 
     @media screen and (max-width: 900px) {
-        height: 180vh;
+       min-height: 220vw;
     }
+   /*  @media screen and (max-width: 490px) {
+        height: 220vh;
+    } */
 
     .head-text-h1 {
         color: var(--color-primary);

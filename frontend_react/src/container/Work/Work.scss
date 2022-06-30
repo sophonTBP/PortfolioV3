@@ -2,8 +2,15 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  
-  
+  @media screen and (min-width: 2000px) {
+    height: 10rem;
+  }
+ 
+  @media screen and (max-width: 530px) {
+    height: 46rem;
+    padding-bottom: 4rem;
+    
+  }
 }
 
 .app__work-filter {
