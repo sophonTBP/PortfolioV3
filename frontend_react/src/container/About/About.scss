@@ -17,54 +17,68 @@
 }
 
 .app__profiles-item {
-  min-height: calc(8vw + 26vw + 6vw + 15vw + 6vw + 1vw + 4vw + 10vw + 30vw);
+  height: auto;
   display: grid;
 
+
+  justify-items: space-around;
+
+
   grid-template-areas:
-    ". title1 image1 ."
+    
     ". header1 image1 ."
-    ". subTitleP1 . ."
+    ". subTitleP1 subTitleP1 ."
     ". paragraph1 paragraph1 ."
     ". . . ."
-    ". image2 . ."
-    ". image2 subTitleP2 ."
+    
     ". image2 paragraph2  .";
   grid-template-columns: 80px 0.5fr 0.5fr 110px;
-  grid-template-rows: 8vw 26vw 6vw 15vw 6vw 1vw 4vw 10vw;
+  grid-template-rows: repeat(1, auto);
 
 
   .about-text {
-    margin: 0 auto;
-    width: 78%;
+    
+    display: flex;
+    justify-content: left;/* align horizontal */
+    align-content: center; /* align vertical */
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 1200px) {
+      margin: 0 auto;
+      width: 76%;
+      align-content: center!important;
+      justify-content: center!important;
+      text-align: center!important;
+    }
+
     letter-spacing: 2px;
     color: var(--color-primary);
     white-space: pre-line !important;
+
   }
 
   @media screen and (max-width: 1200px) {
-
-
-
     text-align: center;
-    height: (calc(4vw + 2rem) + var(--paragraph1-height) + 62vw + 6vh + 12vh + 14vh + 60vw + 6vh + 12vh + 3rem);
+    height: auto;
     display: grid;
 
     grid-template-areas: " title1 "
-    " header1 "
-    " image1  "
-    " subTitleP1 "
-    " paragraph1"
-    " . "
-    " image2  "
-    " subTitleP2 "
-    " paragraph2  ";
+      " header1 "
+      " image1  "
+      " subTitleP1 "
+      " paragraph1"
+      " . "
+      " image2  "
+      " subTitleP2 "
+      " paragraph2  ";
     grid-template-columns: 1fr;
     /* grid-template-rows: calc(4vw + 2rem) var(--paragraph1-height) 62vw 6vh 12vh 15vh 58vw 7vh 12vh 3rem; */
     grid-template-rows: repeat(1, auto);
     grid-gap: 20px;
+
     .about-text {
       letter-spacing: 2px;
-      text-align: center;
+
     }
 
 
@@ -77,18 +91,21 @@
   margin-left: 10px;
   text-align: center;
   height: auto;
+  
 }
 
 img {
   width: clamp(100px, 42vw, 850px);
 
-  margin: 0 auto;
-  padding: 10px;
+  
   border-radius: 15px;
   object-fit: contain;
 
   @media screen and (max-width: 1200px) {
     width: clamp(100px, 75vw, 850px);
+    margin: 0 auto;
+  padding: 10px;
+  
   }
 }
 
@@ -107,14 +124,26 @@ img {
 
 .header-text {
   grid-area: header1;
+ 
+  display: flex;
+  flex-direction: column;
+    justify-content: center;/* align horizontal */
+    align-content: center; /* align vertical */
 }
 
 .subtitlep1 {
+
+  
+  margin-top: 5% !important;
   grid-area: subTitleP1;
 }
 
 .paragraph1 {
   grid-area: paragraph1;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 4rem;
+  }
+  
 }
 
 .subtitlep2 {
@@ -128,6 +157,12 @@ img {
 }
 
 .paragraph2 {
+
+  display: flex;
+  flex-direction: column;
+    justify-content: center;/* align horizontal */
+    align-content: center; /* align vertical */
+    
   grid-area: paragraph2;
   margin-left: 2rem;
 

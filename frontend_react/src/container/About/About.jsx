@@ -31,14 +31,20 @@ const About = () => {
           return (
 
             <div className='app__profiles-item' key={index} >
-             
-              <h2 className="title1 about-text">{about.title}</h2>
-              <p className="small-p-text about-text header-text" >{about.header.replace(regex, '.\n')}</p>
-              <h2 className=" subtitlep1 about-text" >{about.subtitlep1.toUpperCase()}</h2>
-              <p className="small-p-text about-text paragraph1"  >{about.paragraph1.replace(regex, '.\n')}</p>
+             <section className="header-text">
+              <h2 className="about-text">{about.title}</h2>
+              <p className="small-p-text about-text" >{about.header.replace(regex, '.\n')}</p>
+              </section>
               <img className="image1" src={imageUrl1} alt={about.subtitlep1} />
-              <h2 className=" subtitlep2 about-text" >{about.subtitlep2.toUpperCase()}</h2>
-              <p className="small-p-text about-text paragraph2"  >{about.paragraph2.replace(regex, '.\n')}</p>
+              <section className="paragraph1">
+              <h2 className="  about-text" >{about.subtitlep1.toUpperCase()}</h2>
+              <p className="small-p-text about-text "  >{about.paragraph1.replace(regex, '.\n')}</p>
+              </section>
+              
+              <section className="paragraph2">
+              <h2 className=" about-text" >{about.subtitlep2.toUpperCase()}</h2>
+              <p className="small-p-text about-text"   >{about.paragraph2.replace(regex, '.\n')}</p>
+              </section>
               <img className="image2" src={imageUrl2} alt={about.subtitlep2} />
             </div >
           )

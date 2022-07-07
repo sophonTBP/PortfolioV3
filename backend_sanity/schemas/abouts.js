@@ -19,6 +19,10 @@ export default {
             title: 'Header',
             type: 'string'
         },
+
+
+      
+
         {
             name: 'subtitlep1',
             title: 'SubTitlep1',

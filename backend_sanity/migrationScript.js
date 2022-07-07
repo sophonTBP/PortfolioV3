@@ -29,7 +29,14 @@ const buildPatches = docs =>
     id: doc._id,
     patch: {
       set: {index: null},
-      
+        /* {
+            name: 'imgH1',
+            title: 'ImgH1',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        }, */
       // this will cause the transaction to fail if the documents has been
       // modified since it was fetched.
      

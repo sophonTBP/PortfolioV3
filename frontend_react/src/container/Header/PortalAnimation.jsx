@@ -1,7 +1,7 @@
 import './Header.scss';
 import { COLORS } from '../../constants';
 import { ThemeProvider, ThemeContext } from '../../wrapper/ThemeContext';
-import { LogoSlideShow } from './LogoSlideShow';
+import { LogoSlideShow } from './LogoSlideShow2';
 import React from 'react';
 
 
@@ -96,7 +96,7 @@ export const Portal = () => {
           <circle stroke={COLORS.ternary[themeColor]} opacity=".641" strokeWidth="4" cx="183" cy="183" r="138" fill="none"
             fillRule="evenodd" strokeDasharray="90, 7, 15" id="circle1482" />
         </svg>
-        <LogoSlideShow 
+        <LogoSlideShow
  />
       </div>
     </div>)
