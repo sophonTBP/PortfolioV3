@@ -8,12 +8,15 @@ export default {
             title: 'Title',
             type: 'string'
         },
-
         {
-            name: 'headertitle',
-            title: 'Headertitle',
-            type: 'string'
-        },
+            name: 'imgh1',
+            title: 'Imgh1',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        }
+        ,
         {
             name: 'header',
             title: 'Header',
@@ -21,7 +24,7 @@ export default {
         },
 
 
-      
+
 
         {
             name: 'subtitlep1',

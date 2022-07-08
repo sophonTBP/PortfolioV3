@@ -28,6 +28,7 @@ const About = () => {
           const regex = /\.(\s+)/g
           const imageUrl1 = about.imgUrl1 !== undefined ? urlFor(about.imgUrl1) : null;
           const imageUrl2 = about.imgUrl2 !== undefined ? urlFor(about.imgUrl2) : null;
+          const imgh1 = about.imgh1 !== undefined ? urlFor(about.imgh1) : null;
           return (
 
             <div className='app__profiles-item' key={index} >
@@ -35,17 +36,17 @@ const About = () => {
               <h2 className="about-text">{about.title}</h2>
               <p className="small-p-text about-text" >{about.header.replace(regex, '.\n')}</p>
               </section>
-              <img className="image1" src={imageUrl1} alt={about.subtitlep1} />
+              <img className="image1" src={imgh1} alt={about.title} />
               <section className="paragraph1">
               <h2 className="  about-text" >{about.subtitlep1.toUpperCase()}</h2>
               <p className="small-p-text about-text "  >{about.paragraph1.replace(regex, '.\n')}</p>
               </section>
-              
+              <img className="image2" src={imageUrl1} alt={about.subtitlep1} />
               <section className="paragraph2">
               <h2 className=" about-text" >{about.subtitlep2.toUpperCase()}</h2>
               <p className="small-p-text about-text"   >{about.paragraph2.replace(regex, '.\n')}</p>
               </section>
-              <img className="image2" src={imageUrl2} alt={about.subtitlep2} />
+              <img className="image3" src={imageUrl2} alt={about.subtitlep2} />
             </div >
           )
 

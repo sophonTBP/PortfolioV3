@@ -22,24 +22,25 @@ const client = sanityClient.withConfig({ apiVersion: '2021-08-21' })
 // NOTE: This query should eventually return an empty set of documents to mark the migration
 // as complete
 const fetchDocuments = () =>
-  client.fetch(`*[_type == 'abouts'] {_id}`)
+  client.fetch(`*[_type == 'abouts' && defined(headertitle)][0...100] {_id, _rev, headertitle}`)
 
 const buildPatches = docs =>
   docs.map(doc => ({
     id: doc._id,
     patch: {
-      set: {index: null},
-        /* {
-            name: 'imgH1',
-            title: 'ImgH1',
-            type: 'image',
-            options: {
-                hotspot: true,
-            },
-        }, */
+      set: {
+
+        name: 'imgh1',
+        title: 'Imgh1',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      unset: ['headertitle'],
       // this will cause the transaction to fail if the documents has been
       // modified since it was fetched.
-     
+      ifRevisionID: doc._rev
     }
   }))
 

@@ -17,6 +17,7 @@
 }
 
 .app__profiles-item {
+  section{margin-top: 2rem;}
   height: auto;
   display: grid;
 
@@ -25,30 +26,36 @@
 
 
   grid-template-areas:
-    
-    ". header1 image1 ."
-    ". subTitleP1 subTitleP1 ."
-    ". paragraph1 paragraph1 ."
-    ". . . ."
-    
-    ". image2 paragraph2  .";
-  grid-template-columns: 80px 0.5fr 0.5fr 110px;
-  grid-template-rows: repeat(1, auto);
 
+    ". image1 header1 ."
+    ". subTitleP1 image2 ."
+    ". paragraph1 image2 ."
+    ". . . ."
+
+    ". image3 paragraph2  .";
+  grid-template-columns:  0.5fr 560px 560px 0.5fr  ;
+  grid-template-rows: repeat(1, auto);
+  
+  justify-items: space-evenly;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
 
   .about-text {
-    
+
     display: flex;
-    justify-content: left;/* align horizontal */
-    align-content: center; /* align vertical */
+    justify-content: left;
+    /* align horizontal */
+    align-content: center;
+    /* align vertical */
     margin-bottom: 1rem;
 
     @media screen and (max-width: 1200px) {
       margin: 0 auto;
       width: 76%;
-      align-content: center!important;
-      justify-content: center!important;
-      text-align: center!important;
+      align-content: center !important;
+      justify-content: center !important;
+      text-align: center !important;
     }
 
     letter-spacing: 2px;
@@ -63,12 +70,13 @@
     display: grid;
 
     grid-template-areas: " title1 "
-      " header1 "
       " image1  "
+      " header1 "
+      " image2  "
       " subTitleP1 "
       " paragraph1"
       " . "
-      " image2  "
+      " image3  "
       " subTitleP2 "
       " paragraph2  ";
     grid-template-columns: 1fr;
@@ -91,30 +99,39 @@
   margin-left: 10px;
   text-align: center;
   height: auto;
-  
+
 }
 
 img {
-  width: clamp(100px, 42vw, 850px);
+   
+    margin-bottom: 1rem;
+  width: clamp(100px, 42vw, 480px);
 
-  
+
   border-radius: 15px;
-  object-fit: contain;
+  object-fit: scale-down;
 
   @media screen and (max-width: 1200px) {
-    width: clamp(100px, 75vw, 850px);
+    width: clamp(100px, 55vw, 480px);
     margin: 0 auto;
-  padding: 10px;
-  
+    padding: 10px;
+
   }
 }
+
+  
 
 .image1 {
   grid-area: image1;
 }
 
 .image2 {
+  justify-self:right;
   grid-area: image2;
+}
+
+.image3 {
+  grid-area: image3;
 }
 
 .title1 {
@@ -124,31 +141,40 @@ img {
 
 .header-text {
   grid-area: header1;
- 
+  margin-left: 4rem;
   display: flex;
   flex-direction: column;
-    justify-content: center;/* align horizontal */
-    align-content: center; /* align vertical */
+  justify-content: center;
+  /* align horizontal */
+  align-content: center;
+  /* align vertical */
+
+  @media screen and (max-width: 1200px) {
+
+    margin-left: 0;
+  }
+
 }
 
 .subtitlep1 {
 
-  
+
   margin-top: 5% !important;
   grid-area: subTitleP1;
 }
 
 .paragraph1 {
   grid-area: paragraph1;
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 4rem;
   }
-  
+
 }
 
 .subtitlep2 {
   grid-area: subTitleP2;
-  margin-left: 2rem;
+  margin-left: 4rem;
 
   @media screen and (max-width: 1200px) {
 
@@ -160,11 +186,13 @@ img {
 
   display: flex;
   flex-direction: column;
-    justify-content: center;/* align horizontal */
-    align-content: center; /* align vertical */
-    
+  justify-content: center;
+  /* align horizontal */
+  align-content: center;
+  /* align vertical */
+
   grid-area: paragraph2;
-  margin-left: 2rem;
+  margin-left: 4rem;
 
   @media screen and (max-width: 1200px) {
     text-align: center;

@@ -53,16 +53,19 @@
   z-index: 1;
   position: fixed;
   padding: 1rem;
-  top: 4rem;
-  right: 3rem;
-  transform: scale(0.5);
-
+  top: 1%;
+  left: 3rem;
+  transform: scale(0.7);
+  @media screen and (min-width: 1200px) {
+    top: 1%;
+    transform: scale(0.9);
+  }
   @media screen and (max-width: 900px) {
     position:fixed;
-    top: 1rem;
+    top: 2%;
     z-index: 2;
-    right: 50%;
-    transform: scale(0.4);
+    left: 85%;
+    transform: scale(0.6);
 
   }
 
@@ -88,15 +91,13 @@
 
 
 
-  border-radius: 25%;
+  
   position: fixed;
-  border-style: outset;
+  border-style:hidden;
   border-width: 2px;
-  border-left-color: var(--color-primary);
-  border-top-color: var(--color-primary);
-  border-right-color: var(--color-ternary);
+  
   border-bottom-color: var(--color-ternary);
-  transform: scale(1.5);
+  transform: scale(1.3);
 
   overflow: hidden;
 
@@ -108,13 +109,13 @@
 }
 
 .moon-sun-container button {
-  border: 3px;
+  
   margin-right: 7px;
   border-radius: 100%;
   width: 15px;
   height: 15px;
   border-style: hidden;
-  background: var(--color-primary);
+  background: var(--color-secondary);
 
 }
 
@@ -130,7 +131,7 @@
 
 .moon-sun-container .crown {
 
-  background: var(--color-bg);
+  background: var(--color-ternary);
   border-radius: 100%;
   
  
@@ -234,7 +235,7 @@
 }
 
 .p-text {
-  font-size: clamp(0.7rem, 1.2vw, 2.85rem);
+  font-size: clamp(0.7rem, 1.1vw, 1.85rem);
   text-align: left;
   color: var(--color-primary);
   line-height: 1.5;
@@ -244,7 +245,7 @@
 
 .small-p-text {
   font-family: "Catamaran"!important;
-  font-size: clamp(0.7rem, 1.3vw, 1.4rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
   text-align: left;
   color: var(--color-white);
   line-height: 1.5;
