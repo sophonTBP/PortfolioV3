@@ -232,7 +232,7 @@
   @media screen and (max-width: 1200px) {margin-bottom: 15rem;}
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   .moon{
     color: var(--color-primary)!important;
     position: absolute;
