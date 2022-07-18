@@ -70,6 +70,18 @@ const Work = () => {
                 className="app__work-hover app__flex"
               >
 
+                <a href='https://earnest-moonbeam-19d155.netlify.app/' target="_blank" rel="noreferrer">
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.90] }}
+                    transition={{ duration: 0.25 }}
+                    className="app__flex"
+                  >
+
+                    <AiFillEye />
+                  </motion.div>
+                </a>
+
 
                 <motion.div
                   whileInView={{ scale: [0, 1] }}
@@ -77,17 +89,7 @@ const Work = () => {
                   transition={{ duration: 0.25 }}
                   className="app__flex"
                 >
-                  <AiFillEye />
-                </motion.div>
-
-
-                <motion.div
-                  whileInView={{ scale: [0, 1] }}
-                  whileHover={{ scale: [1, 0.90] }}
-                  transition={{ duration: 0.25 }}
-                  className="app__flex"
-                >
-                  <AiFillGithub href='https://earnest-moonbeam-19d155.netlify.app/'/>
+                  <AiFillGithub  />
                 </motion.div>
 
               </motion.div>
