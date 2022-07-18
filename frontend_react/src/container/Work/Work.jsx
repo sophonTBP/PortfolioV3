@@ -87,7 +87,7 @@ const Work = () => {
                   transition={{ duration: 0.25 }}
                   className="app__flex"
                 >
-                  <AiFillGithub />
+                  <AiFillGithub href='https://earnest-moonbeam-19d155.netlify.app/'/>
                 </motion.div>
 
               </motion.div>
