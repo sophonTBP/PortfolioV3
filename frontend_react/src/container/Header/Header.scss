@@ -19,13 +19,15 @@
   
   margin: 0;
   width: 100%;
-  @media screen and (min-width: 1200px) { margin-top: 15rem;}
+  @media screen and (min-width: 1200px) { 
+    margin-top: 13rem;
+  }
   flex-direction: row;
   
 
   @media screen and (max-width: 1200px) {
     
-    
+    margin-top: 6rem;
     flex-direction: column;
     
   }
@@ -89,6 +91,7 @@
   border-color: white;
   border-width: 2px;
   font-weight: 900;
+  transition: transform 330ms ease-in-out;
   cursor: pointer;
 
   a {
@@ -108,6 +111,7 @@
 
   &:hover {
     background-color: var(--color-ternary);
+    transform: scale(1.2);
   }
 }
 
@@ -188,10 +192,11 @@
 }
 
 .app__header-img {
+position: relative;
 
   justify-content: center;
   align-items: center;
-  position: relative;
+  
 
   img {
 
@@ -229,9 +234,10 @@
 
 .background {
   margin-top: 10rem;
-  @media screen and (max-width: 1200px) {margin-bottom: 15rem;}
+  @media screen and (max-width: 1200px) {margin-bottom: 18rem;}
   display: flex;
   justify-content: center;
+  padding-right: 2rem;
   align-items: flex-end;
   .moon{
     color: var(--color-primary)!important;
@@ -251,20 +257,26 @@
 
 .animation_container {
   position: absolute;
-  width: 400px;
+  width: 380px;
   height: 290px;
   margin: 0 auto;
   display: block;
   
   animation: fatCircle 1s linear infinite;
 
-  @media screen and (min-width: 1200px) {
-    transform: scale(1.8);
-  }
-
   @media screen and (max-width: 400px) {
     transform: scale(0.6);
   }
+
+  @media screen and (min-width: 1200px) {
+    transform: scale(1.7);
+  }
+  @media screen and (min-width: 1600px) {
+    transform: scale(1.9);
+  }
+  
+
+  
 }
 
 .circle:nth-child(1) {

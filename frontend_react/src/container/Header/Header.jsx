@@ -46,7 +46,8 @@ const Header = () => (
             
         <div className="tag-cmp ">
           <p className="p-text cta-text">ENSEMBLE REALISONS VOS PROJETS</p>
-          <div  className="cta-button p-text"><a href="#contact">CONTACTEZ NOUS</a></div>
+          
+          <div className="cta-button"><a className="p-text"  href="#contact">CONTACTEZ NOUS</a></div>
         </div>
       
     </motion.div>
@@ -65,4 +66,4 @@ const Header = () => (
   </div>
 );
 
-export default AppWrap(Header, 'acceuil');
+export default AppWrap(Header, 'acceuil','banner');

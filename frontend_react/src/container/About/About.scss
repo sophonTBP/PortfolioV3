@@ -52,7 +52,7 @@
 
     @media screen and (max-width: 1200px) {
       margin: 0 auto;
-      width: 76%;
+      width: 82%;
       align-content: center !important;
       justify-content: center !important;
       text-align: center !important;
@@ -72,7 +72,9 @@
     grid-template-areas: " title1 "
       " image1  "
       " header1 "
+      " . "
       " image2  "
+      
       " subTitleP1 "
       " paragraph1"
       " . "
@@ -103,20 +105,17 @@
 }
 
 img {
-   
-    margin-bottom: 1rem;
-  width: clamp(100px, 42vw, 480px);
+  
+  margin-bottom: 1rem;
+  width: 90%;
+ 
 
-
-  border-radius: 15px;
-  object-fit: scale-down;
-
+  border-radius: 5px;
+  
   @media screen and (max-width: 1200px) {
-    width: clamp(100px, 55vw, 480px);
-    margin: 0 auto;
-    padding: 10px;
-
-  }
+   margin: 0 auto; ;
+    width: 80%;}
+  
 }
 
   
@@ -126,8 +125,11 @@ img {
 }
 
 .image2 {
-  justify-self:right;
+  margin-left: 4rem;
   grid-area: image2;
+  @media screen and (max-width: 1200px) {
+    margin: 0 auto; ;
+     width: 80%;}
 }
 
 .image3 {
@@ -150,8 +152,7 @@ img {
   /* align vertical */
 
   @media screen and (max-width: 1200px) {
-
-    margin-left: 0;
+    margin:0;
   }
 
 }
@@ -171,15 +172,15 @@ img {
   }
 
 }
+.paragraph1 p{
+width: 90%;
 
+}
 .subtitlep2 {
   grid-area: subTitleP2;
   margin-left: 4rem;
 
-  @media screen and (max-width: 1200px) {
-
-    margin-left: 0;
-  }
+  
 }
 
 .paragraph2 {
@@ -195,9 +196,7 @@ img {
   margin-left: 4rem;
 
   @media screen and (max-width: 1200px) {
-    text-align: center;
-    margin-left: 0;
-
+    margin-left: 0rem;
   }
 }
 

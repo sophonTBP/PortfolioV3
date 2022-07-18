@@ -2,12 +2,14 @@
   margin-top: 5rem;
   color: var(--color-bg);
   flex: 1;
-  
+
   width: 100%;
   flex-direction: column;
-  .head-text{
+
+  .head-text {
     margin: 2rem;
   }
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -15,41 +17,44 @@
 
 .contact-label-text {
   padding-left: 0.7rem;
-  text-align: right !important ;
+  text-align: right !important;
 }
 
 .app__footer-cards {
-  
+
   width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+
   @media screen and (max-width: 745px) {
     flex-direction: column;
-    
+
   }
 
   .app__footer-card {
     min-width: 250px;
     display: flex;
     flex-direction: row;
-    
+
     align-items: center;
     justify-content: center;
     margin: 0.5rem 0rem;
-   
-    
+
+
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--color-primary);
 
     transition: all 0.3s ease-in-out;
+
     @media screen and (max-width: 745px) {
       align-items: center;
       justify-content: center;
       width: 100%;
     }
+
     img {
       filter: grayscale(80%);
       width: 40px;
@@ -59,7 +64,7 @@
 
     p {
       font-weight: 500;
-      
+
     }
 
     a {
@@ -67,7 +72,7 @@
       text-decoration: none;
       font-weight: 500;
       min-width: 100px;
-     
+
     }
 
     &:hover {
@@ -130,7 +135,7 @@
   }
 
   button {
-    padding: 0.8rem 0.8rem 0.5rem ;
+    padding: 0.8rem 0.8rem 0.5rem;
     border-radius: 10px;
     border: none;
     background-color: var(--color-secondary);
@@ -138,16 +143,21 @@
     font-weight: 500;
     color: var(--color-bg);
     outline: none;
-    margin: 2rem  0;
+    margin: 2rem 0;
     font-family: var(--font-base);
 
-    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+
+    transition: transform 330ms ease-in-out;
+
     cursor: pointer;
 
     &:hover {
       background-color: var(--color-ternary);
-      color: var(--color-secondary)!important;}
-    
+      color: var(--color-secondary) !important;
+      transform: scale(1.2);
+    }
+
+
   }
 
   @media screen and (max-width: 900px) {

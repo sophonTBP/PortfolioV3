@@ -734,10 +734,7 @@ export const LogoSlideShow = (props) => {
   ]
   const len = svg_Array.length;
   const index = items % len
-  console.log("len")
-  console.log(len)
-  console.log("items")
-  console.log(items % len)
+  
 
 
   return (
