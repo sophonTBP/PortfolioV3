@@ -5,7 +5,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import DarkToggle from './DarkModeTogle';
 import DarkCheck from './DarkModeCheck';
 import { images } from '../../constants';
-import './Navbar.scss';
+import './Navbar.module.scss';
 import { COLORS } from '../../constants';
 import { ThemeProvider, ThemeContext }from '../../wrapper/ThemeContext';;
 const Navbar = () => {
